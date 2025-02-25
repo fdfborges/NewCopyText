@@ -1,0 +1,65 @@
+@import '../PalletColor/PalletColor.scss';
+
+.CardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: $SecondaryGreen;
+
+    .TitiulodoCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 1.6rem;
+        border-radius: 6px 6px 0px 0px;
+        background-color: $PrimaryGreen;
+
+        input{
+            display: flex;
+            text-align: center;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 0.9rem;
+            color: $PrimaryWhite;
+            font-weight: 500;
+            &::placeholder{
+                font-size: 0.9rem;
+                color: $PrimaryWhite;
+                font-weight: 500;
+            }
+        }
+    }
+
+    textarea{
+        width: 100%;
+        height: 6rem;
+        border: none;
+        resize: none;
+        outline: none;
+        background-color: transparent;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+    button{
+        width: 100%;
+        height: 2rem;
+        border: none;
+        background-color: $PrimaryGreen;
+        border-radius: 0px 0px 6px 6px;
+        color: $PrimaryWhite;
+        font-weight: 600;
+        transition: 0.2s;
+        &:hover{
+            transition: 0.2s;
+            background-color: $PrimaryGreen_HOVER;
+        }
+        &:active{
+            transition: 0.2s;
+            background-color: $PrimaryGreen_ACTIVE;
+        }
+    }
+}
