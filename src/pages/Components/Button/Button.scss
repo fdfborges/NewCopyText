@@ -1,0 +1,39 @@
+@import '../PalletColor/PalletColor.scss';
+
+.btn {
+    cursor: pointer;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .btn-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Variações de Botão */
+  .btn.primary { background: $PrimaryGreen; color: white; border: 3px solid $PrimaryGreen; width: 8rem; height: 2.2rem;}
+  .btn.secondary { background: $PrimaryWhite; color: $PrimaryBlack; width: 6rem; height: 2.2rem;}
+  .btn.outline { background: transparent; border: 2px solid #007bff; color: #007bff; } //Definir
+  .btn.danger { background: #dc3545; color: white; } //Definir
+  
+  /* Tamanhos */
+  .btn.small { font-size: 0.87rem;}
+  .btn.medium { font-size: 0.87rem;}
+  .btn.large { font-size: 18px; padding: 15px 30px; } //Definir
+  
+  /* Hover Effects */
+  .btn:not(.outline):hover { filter: brightness(1.2); }
+  .btn.outline:hover { background: #007bff; color: white; }
+  
+  /* Botão Desativado */
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

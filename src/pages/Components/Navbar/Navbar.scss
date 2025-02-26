@@ -1,0 +1,40 @@
+@import '../PalletColor/PalletColor.scss';
+
+.NavbarContainerPrincipal {
+    display: flex;
+    justify-content: space-around;
+
+    .NavbarUl {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .NavbarUl li a,
+    .NavbarUl li {
+        color: $PrimaryBlack;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .NavbarUl li:first-child a {
+        color: $PrimaryGreen_LINK;
+        font-weight: bold;
+        transition: 0.2s;
+
+    }
+
+    .NavbarUl li:first-child a:hover {
+        transition: 0.2s;
+        color: $PrimaryGreen_HOVER;
+    }
+
+    .NavbarUl li:first-child a:active {
+        transition: 0.2s;
+        color: $PrimaryGreen_ACTIVE;
+    }
+
+    .BtnContainerNavbar{
+        display: flex;
+        align-items: center;
+    }
+}
