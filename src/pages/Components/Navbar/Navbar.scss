@@ -3,25 +3,47 @@
 .NavbarContainerPrincipal {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+
+    .LogoContainerNavbar span{
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
 
     .NavbarUl {
         display: flex;
         gap: 2rem;
     }
 
-    .NavbarUl li a,
-    .NavbarUl li {
+    .NavbarUl li{
+        list-style: none;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .NavbarUl li a{
         color: $PrimaryBlack;
         text-decoration: none;
         list-style: none;
+        transition: 0.2s;
+        &:hover{
+            color: $PrimaryBlack_HOVER;
+            margin-bottom: 0.5rem;
+            transition: 0.2s;
+        }
     }
 
     .NavbarUl li:first-child a {
         color: $PrimaryGreen_LINK;
         font-weight: bold;
         transition: 0.2s;
-
     }
+
 
     .NavbarUl li:first-child a:hover {
         transition: 0.2s;
@@ -33,8 +55,9 @@
         color: $PrimaryGreen_ACTIVE;
     }
 
-    .BtnContainerNavbar{
+    .BtnContainerNavbar {
         display: flex;
         align-items: center;
+        gap: 0.6rem;
     }
 }

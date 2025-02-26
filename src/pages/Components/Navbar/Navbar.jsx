@@ -5,8 +5,8 @@ import { Button } from '../Button/Button';
 export const Navbar = () => {
   return (
     <nav className='NavbarContainerPrincipal'>
-      <div>
-        <span>CopyText</span>
+      <div className='LogoContainerNavbar'>
+        <span>COPYTEXT</span>
       </div>
       <div>
         <ul className='NavbarUl'>
