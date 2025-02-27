@@ -1,0 +1,22 @@
+@import '../PalletColor/PalletColor.scss';
+
+.SpanLogo{
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.white{
+
+    color: $PrimaryWhite;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.black{
+    color: $PrimaryBlack;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}

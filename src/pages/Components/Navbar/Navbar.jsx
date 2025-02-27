@@ -1,12 +1,12 @@
 import React from 'react'
 import './Navbar.scss';
 import { Button } from '../Button/Button';
-
+import {Logo} from '../Logo/Logo';
 export const Navbar = () => {
   return (
     <nav className='NavbarContainerPrincipal'>
       <div className='LogoContainerNavbar'>
-        <span>COPYTEXT</span>
+        <Logo/>
       </div>
       <div>
         <ul className='NavbarUl'>
