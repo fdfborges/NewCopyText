@@ -8,6 +8,8 @@
     background-color: $SecondaryGreen;
 
     .TitiulodoCard {
+        
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,7 +33,51 @@
                 font-weight: 500;
             }
         }
+        
+        #BtnEditCard{
+            width: 20px;
+            height: 80%;
+            background-color: $PrimaryGreen_HOVER;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            &:hover{
+                transition: 0.2s;
+                background-color: $SecondaryGreen;
+            }
+            &:active{
+                transition: 0.2s;
+                background-color: $PrimaryGreen_ACTIVE;
+            }
+            img{
+                height: 60%;
+            }
+        }
+
+        #BtnDeleteCard{
+            width: 30px;
+            height: 80%;
+            background-color: $PrimaryGreen_HOVER;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            &:hover{
+                transition: 0.2s;
+                background-color: $SecondaryGreen;
+            }
+            &:active{
+                transition: 0.2s;
+                background-color: $PrimaryGreen_ACTIVE;
+            }
+            img{
+                height: 70%;
+            }
+        }
     }
+
+
 
     textarea{
         width: 100%;
@@ -42,6 +88,31 @@
         background-color: transparent;
         box-sizing: border-box;
         padding: 1rem;
+    }
+
+    #BtnEditTextArea{
+        position: relative;
+        margin-left: auto;
+        margin-right: 1rem;
+        margin-bottom: 2px;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 100%;
+        background-color: $PrimaryGreen_HOVER;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            transition: 0.2s;
+            background-color: $PrimaryGreen
+        }
+        &:active{
+            transition: 0.2s;
+            background-color: $PrimaryGreen_ACTIVE;
+        }
+        img{
+            height: 1rem;
+        }
     }
 
     button{
