@@ -1,0 +1,47 @@
+@import '../Components/PalletColor/PalletColor.scss';
+
+.ContainerNewsletterPrincipal {
+    .ContainerImgAndText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ContainerImg {
+            img {
+                height: 20rem;
+            }
+        }
+
+        .Texts {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            
+            .textsTop span {
+                display: flex;
+                flex-direction: column;
+                font-weight: 900;
+                font-size: 2.6rem;
+                letter-spacing: 0.3rem;
+
+                &:last-child {
+                    font-weight: 900;
+                    background: linear-gradient(90deg, #008B76, #00b196, #00CE7C);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    display: inline-block;
+                }
+            }
+
+            .textsDown{
+                width: 55%;
+                span{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
