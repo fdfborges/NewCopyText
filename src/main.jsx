@@ -5,6 +5,8 @@ import { App } from './App';
 import './index.css'
 import { Funcionatily } from './pages/Functionality/Functionality'
 
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
