@@ -1,12 +1,16 @@
 import React from 'react'
+import { useModal } from '../../Register/ContextModal';
 import './Navbar.scss';
 import { Button } from '../Button/Button';
-import {Logo} from '../Logo/Logo';
+import { Logo } from '../Logo/Logo';
+
 export const Navbar = () => {
+  const { setIsOpen } = useModal();
+
   return (
     <nav className='NavbarContainerPrincipal'>
       <div className='LogoContainerNavbar'>
-        <Logo/>
+        <Logo />
       </div>
       <div>
         <ul className='NavbarUl'>
@@ -28,6 +32,7 @@ export const Navbar = () => {
           size='medium'
           disabled='true' //Não funcionou
           children={"REGISTRE-SE"}
+          onClick={() => setIsOpen(true)}
         />
 
 
