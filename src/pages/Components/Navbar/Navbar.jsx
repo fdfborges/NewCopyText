@@ -23,14 +23,14 @@ export const Navbar = () => {
         <Button
           variant='secondary'
           size='small'
-          disabled='true' //Não funcionou
+          disabled='true'
           children={"ENTRAR"}
         />
 
         <Button
           variant='primary'
           size='medium'
-          disabled='true' //Não funcionou
+          disabled='true'
           children={"REGISTRE-SE"}
           onClick={() => setIsOpen(true)}
         />

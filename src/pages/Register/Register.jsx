@@ -1,3 +1,4 @@
+import React from 'react';
 import './Register.scss';
 import { useModal } from './ContextModal';
 import { useState } from 'react';
@@ -13,13 +14,13 @@ import AvatarSignUp from './assets/AvatarSignUp.svg'
 
 export const Register = () => {
 
-    const [isOpen, openModal, closeModal] = useModal();
+    const { isOpen, setIsOpen } = useModal();
 
     return (
         <>
             {isOpen && (
-                <div className="RegisterContainerPrincipal">
-                    <div className="RegisterBackground">
+                <div onClick={() => setIsOpen(false)} className="RegisterContainerPrincipal">
+                    <div onClick={(e) => e.stopPropagation()} className="RegisterBackground">
                         <div className='RegisterContainerLeft'>
                             <form action="#">
                                 <div className="ContainerTitleAndDescription">
@@ -34,7 +35,7 @@ export const Register = () => {
                                     <div className="inputAndIcon"><input placeholder='Repita a Senha' type="password" /> <img src={PasswordIcon} alt="" /></div>
                                 </div>
                                 <div className="RegisterFormContainerTerms">
-                                    <input type="checkbox" />
+                                    <input type="checkbox"/>
                                     <span className='spanTerms'>Aceite os <a href="#"><strong>termos e condições</strong></a></span>
                                 </div>
                                 <Button className="BtnSubmitFormRegiter"

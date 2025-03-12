@@ -12,8 +12,13 @@
 
 .RegisterContainerPrincipal {
     display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.2);
+    align-items: center;
+    background: rgba(6, 6, 6, 0.404);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 

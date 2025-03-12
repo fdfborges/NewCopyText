@@ -12,6 +12,7 @@ export const App = () => {
     <ContextModal>
       <Router>
         <Navbar />
+        <Register />
         <Routes>
           <Route path="/" element={<Funcionatily />} />
           <Route path="newsletter" element={<Newsletter />} />
