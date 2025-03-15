@@ -1,7 +1,6 @@
 import React from 'react';
 import './Register.scss';
 import { useModal } from './ContextModal';
-import { useState } from 'react';
 import AvatarIcon from './assets/AvatarIcon.svg';
 import LetterIcon from './assets/LetterIcon.svg';
 import PasswordIcon from './assets/PasswordIcon.svg'

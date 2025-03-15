@@ -1,0 +1,173 @@
+@import '../Components/PalletColor/PalletColor.scss';
+
+@mixin spanTerms {
+    font-weight: 300;
+    font-size: 0.8rem;
+
+    & a {
+        text-decoration: none;
+        color: $PrimaryGreen;
+    }
+}
+
+.LoginContainerPrincipal {
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(6, 6, 6, 0.404);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+
+
+    .LoginBackground {
+        display: flex;
+        width: 60%;
+        height: 30rem;
+        border-radius: 8px;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.60);
+        background-color: $PrimaryWhite;
+
+        .LoginContainerLeft {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+
+
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 0.6rem;
+
+                .ContainerTitleAndDescription {
+                    width: 70%;
+
+                    span {
+                        font-size: 1rem;
+                        color: gray;
+                    }
+                }
+
+                .LoginFormContainerInput {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.4rem;
+                }
+
+                .inputAndIcon {
+                    display: flex;
+                    align-items: center;
+                    width: 70%;
+
+                    input {
+                        width: 100%;
+                        position: relative;
+                        z-index: 1;
+                        width: 100%;
+                        height: 3rem;
+                        border-radius: 6px;
+                        border: 3px solid $PrimaryGreen_LINK;
+                        caret-color: #00ce7c75;
+                        background-color: #00ce7c0f;
+                        padding-left: 2.3rem;
+                        color: $PrimaryGreen;
+
+                        &::placeholder {
+                            color: #00ce7c75;
+                        }
+
+                        &:focus {
+                            border: 3px solid $PrimaryGreen;
+                            outline: none;
+                        }
+                    }
+
+                    img {
+                        padding-left: 0.6rem;
+                        position: absolute;
+                        z-index: 2;
+                        height: 1.4rem;
+                    }
+                }
+
+                .LoginFormContainerTerms {
+                    width: 70%;
+                    display: flex;
+                    gap: 0.4rem;
+
+                    span {
+                        @include spanTerms;
+                    }
+
+                    input {
+                        width: 1rem;
+                        accent-color: $PrimaryGreen;
+                    }
+
+                }
+
+                button {
+                    width: 70%;
+                    height: 2.8rem;
+                    background-color: $PrimaryGreen_LINK;
+                    border-radius: 6px;
+                    border: none;
+                    color: $PrimaryWhite;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    transition: 0.2s;
+
+                    &:hover {
+                        transition: 0.2s;
+                        background-color: $PrimaryGreen;
+                    }
+
+                    &:active {
+                        transition: 0.2s;
+                        background-color: $PrimaryGreen_LINK;
+                    }
+                }
+
+                span {
+                    @include spanTerms;
+                }
+            }
+        }
+
+        .LoginContainerRight {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            background-color: $PrimaryGreen;
+            border-radius: 0px 8px 8px 0px;
+            gap: 0.6rem;
+
+            img {
+                width: 75%;
+            }
+
+            span {
+                text-align: center;
+                color: $PrimaryWhite;
+            }
+        }
+    }
+
+}

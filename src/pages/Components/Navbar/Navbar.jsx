@@ -1,11 +1,13 @@
 import React from 'react'
 import { useModal } from '../../Register/ContextModal';
+import { useModalForLogin } from '../../Login/ContextModalForLogin'
 import './Navbar.scss';
 import { Button } from '../Button/Button';
 import { Logo } from '../Logo/Logo';
 
 export const Navbar = () => {
   const { setIsOpen } = useModal();
+  const { setIsOpenForLogin } = useModalForLogin();
 
   return (
     <nav className='NavbarContainerPrincipal'>
@@ -25,6 +27,7 @@ export const Navbar = () => {
           size='small'
           disabled='true'
           children={"ENTRAR"}
+          onClick={() => setIsOpenForLogin(true)}
         />
 
         <Button
