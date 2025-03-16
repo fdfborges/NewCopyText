@@ -14,13 +14,11 @@ export const Navbar = () => {
       <div className='LogoContainerNavbar'>
         <Logo />
       </div>
-      <div>
-        <ul className='NavbarUl'>
-          <li><a href="#">Sobre o Dev</a></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
+      <ul className='NavbarUl'>
+        <li><a href="#">Sobre o Dev</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
       <div className='BtnContainerNavbar'>
         <Button
           variant='secondary'

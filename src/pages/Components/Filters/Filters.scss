@@ -1,0 +1,28 @@
+@import '../PalletColor/PalletColor.scss';
+
+.ContainerSelectFiltersPrincipal {
+    width: 22.5rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $PrimaryGreen;
+
+    img {
+        height: 1.6rem;
+        flex: 1;
+    }
+
+    .ContainerSelectFilter {
+        width: 22.5rem;
+        height: 2.2rem;
+        text-align: center;
+        background-color: $PrimaryGreen;
+        flex: 4;
+        color: $PrimaryWhite;
+        outline: none;
+        &:focus{
+            border: none;
+        }
+    }
+}

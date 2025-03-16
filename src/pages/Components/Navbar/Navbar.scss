@@ -7,10 +7,13 @@
     height: 4rem;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
 
-    .LogoContainerNavbar span{
-        letter-spacing: 2px;
-        font-size: 1.2rem;
-        font-weight: 900;
+    .LogoContainerNavbar {
+        
+        span {
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
     }
 
     .NavbarUl {
@@ -18,7 +21,7 @@
         gap: 2rem;
     }
 
-    .NavbarUl li{
+    .NavbarUl li {
         list-style: none;
         height: 3rem;
         display: flex;
@@ -26,12 +29,13 @@
         justify-content: center;
     }
 
-    .NavbarUl li a{
+    .NavbarUl li a {
         color: $PrimaryBlack;
         text-decoration: none;
         list-style: none;
         transition: 0.2s;
-        &:hover{
+
+        &:hover {
             color: $PrimaryBlack_HOVER;
             margin-bottom: 0.5rem;
             transition: 0.2s;
@@ -62,14 +66,8 @@
     }
 }
 
-@media (max-width: 480px){
-    
-}
+@media (max-width: 480px) {}
 
-@media(min-width:768px) and (max-width: 1024px){
-    
-}
+@media(min-width:768px) and (max-width: 1024px) {}
 
-@media(min-width: 1200px){
-    
-}
+@media(min-width: 1200px) {}

@@ -2,4 +2,15 @@
 
 .ContainerFunctionalityPrincipal{
     display: flex;
+    flex-direction: column;
+
+    .ContainerFiltersFuncionality{
+        display: flex;
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+
+    .ContainerFaixasPrincipal{
+        display: flex;
+    }
 }
