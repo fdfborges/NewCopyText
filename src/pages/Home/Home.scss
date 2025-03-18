@@ -1,0 +1,93 @@
+.ContainerPrincipalHome {
+    .ContaierPrincipalHomeSuperior {
+        display: flex;
+        padding: 2rem 8rem;
+
+        .ContainerHomePrincipalLeft {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            .TitleAndParagraphHome {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                gap: 1.3rem;
+
+                .TitlePageHome {
+                    width: 70%;
+
+                    h1 {
+                        font-size: 2.6rem;
+                    }
+                }
+
+                .SubparagraphPageHome {
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+
+            .ButtonsPageHome {
+                width: 90%;
+                display: flex;
+                gap: 1rem;
+                justify-content: left;
+
+                button {
+                    width: 9rem;
+                    height: 3rem;
+                }
+
+                .BtnSaberMaisHome {
+                    width: 7rem;
+                }
+            }
+        }
+
+        .ContainerHomePrincipalRight {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .PersonAvatar {
+                width: 50%;
+            }
+        }
+    }
+
+    .ContainerPrincipalRecomendacoes {
+        margin-bottom: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0px -6px 12px -1px rgba(0, 0, 0, 0.32);
+        padding: 1rem 0;
+        background-color: white;
+        bottom: 0;
+
+        .RecomendacoesTitle {
+            span {
+                font-size: 1.2rem;
+                font-weight: 800;
+                line-height: 1.5;
+            }
+        }
+
+        .RecomendacoesLogo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                height: 60%;
+                cursor: pointer;
+            }
+        }
+    }
+}

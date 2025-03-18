@@ -8,6 +8,7 @@ import { Footer } from './pages/Components/Footer/Footer';
 import { Newsletter } from './pages/Newsletter/Newsletter';
 import { Register } from './pages/Register/Register';
 import { Login } from './pages/Login/Login';
+import { Home } from './pages/Home/Home';
 
 export const App = () => {
   return (
@@ -18,7 +19,8 @@ export const App = () => {
           <Login />
           <Register />
           <Routes>
-            <Route path="/" element={<Funcionatily />} />
+            <Route path="/" element={<Home />} />
+            <Route path="funcionality" element={<Funcionatily />} />
             <Route path="newsletter" element={<Newsletter />} />
           </Routes>
           <Footer />
