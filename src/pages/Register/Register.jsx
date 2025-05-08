@@ -37,15 +37,18 @@ export const Register = () => {
                                     <div className="inputAndIcon"><input placeholder='Repita a Senha' type="password" /> <img src={PasswordIcon} alt="" /></div>
                                 </div>
                                 <div className="RegisterFormContainerTerms">
-                                    <input type="checkbox" />
-                                    <span className='spanTerms'>Aceite os <a href="#"><strong>termos e condições</strong></a></span>
+                                    <input type="checkbox" id='AcceptTerms' />
+                                    
+                                    <label htmlFor="AcceptTerms">
+                                        <span className='spanTerms'>Aceite os <a href="#"><strong>termos e condições</strong></a></span>
+                                    </label>
                                 </div>
                                 <Button className="BtnSubmitFormRegiter"
                                     children={"LOG IN"}
                                     variant="primary"
                                     size="medium"
                                 />
-                                <span>Já tem uma conta? <a href="#"><strong onClick={() => { setIsOpen(false); setIsOpenForLogin(true) }}>Entre agora!</strong></a></span>
+                                <span>Já tem uma conta? <a href="#"><strong className='BtnStrongLink' onClick={() => { setIsOpen(false); setIsOpenForLogin(true) }}>Entre agora!</strong></a></span>
                             </form>
                         </div>
                         <div className="RegisterContainerRight">

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Login.scss';
 import { useModalForLogin } from './ContextModalForLogin';
+import { useModal } from '../Register/ContextModal'
 import LetterIcon from './assets/LetterIcon.svg';
 import PasswordIcon from './assets/PasswordIcon.svg'
 import { Button } from '../Components/Button/Button';
@@ -9,6 +10,7 @@ import AvatarCopy from './assets/AvatarCopy.svg'
 export const Login = () => {
 
     const { isOpenForLogin, setIsOpenForLogin } = useModalForLogin();
+    const { isOpen, setIsOpen } = useModal();
 
     return (
         <>
@@ -30,7 +32,7 @@ export const Login = () => {
                                     variant="primary"
                                     size="medium"
                                 />
-                                <span>Não tem uma conta? <a href="#"><strong>Crie Agora</strong></a></span>
+                                <span>Não tem uma conta? <a href="#"><strong className='BtnStrongLink' onClick={() => { setIsOpenForLogin(false); setIsOpen(true)}}>Crie Agora</strong></a></span>
                             </form>
                         </div>
                         <div className="LoginContainerRight">

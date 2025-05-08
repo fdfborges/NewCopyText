@@ -58,6 +58,8 @@
                         font-size: 1rem;
                         color: gray;
                     }
+
+
                 }
 
                 .LoginFormContainerInput {
@@ -166,8 +168,12 @@
             span {
                 text-align: center;
                 color: $PrimaryWhite;
+
             }
         }
     }
 
+    .BtnStrongLink{
+        font-weight: 800;
+    }
 }
