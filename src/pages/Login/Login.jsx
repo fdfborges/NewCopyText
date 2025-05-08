@@ -36,7 +36,7 @@ export const Login = () => {
                             </form>
                         </div>
                         <div className="LoginContainerRight">
-                            <img src={AvatarCopy} alt="" />
+                            <img src={AvatarCopy} alt="" draggable='false'/>
                             <span>Registre-se e leve seus <strong>Copys</strong><br />para onde quiser!</span>
                         </div>
                     </div>

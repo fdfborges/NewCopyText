@@ -52,7 +52,7 @@ export const Register = () => {
                             </form>
                         </div>
                         <div className="RegisterContainerRight">
-                            <img src={AvatarSignUp} alt="" />
+                            <img src={AvatarSignUp} alt="" draggable='false'/>
                             <span>Registre-se e leve seus <strong>Copys</strong><br />para onde quiser!</span>
                         </div>
                     </div>

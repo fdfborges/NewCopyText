@@ -8,7 +8,7 @@ export const Newsletter = () => {
             <div className="ContainerNewsletterPrincipal">
                 <div className="ContainerImgAndText">
                     <div className='ContainerImg'>
-                        <img src={AvatarNewsletter} alt="" />
+                        <img src={AvatarNewsletter} alt="" draggable='false'/>
                     </div>
                     <div className='Texts'>
                         <div className="textsTop">

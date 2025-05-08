@@ -25,7 +25,7 @@ export const Home = () => {
                         </div>
                     </div>
                     <div className='ContainerHomePrincipalRight'>
-                        <img className='PersonAvatar' src={PersonAvatar} alt="" />
+                        <img className='PersonAvatar' draggable='false' src={PersonAvatar} alt="" />
                     </div>
                 </div>
                 <Recommendations />

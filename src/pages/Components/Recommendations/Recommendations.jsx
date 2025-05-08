@@ -12,11 +12,11 @@ export const Recommendations = () => {
         <div className="ContainerPrincipalRecomendacoes">
             <div className='RecomendacoesTitle'><span>Nomes que usam a CopyText<br></br>e produzem!</span></div>
             <div className='RecomendacoesLogo'>
-                <img src={Logo1} alt="" />
-                <img src={Logo2} alt="" />
-                <img src={Logo3} alt="" />
-                <img src={Logo4} alt="" />
-                <img src={Logo5} alt="" />
+                <img src={Logo1} alt="" draggable='false'/>
+                <img src={Logo2} alt="" draggable='false'/>
+                <img src={Logo3} alt="" draggable='false'/>
+                <img src={Logo4} alt="" draggable='false'/>
+                <img src={Logo5} alt="" draggable='false'/>
             </div>
         </div>
     )
