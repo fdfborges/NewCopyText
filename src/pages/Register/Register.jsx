@@ -1,6 +1,7 @@
 import React from 'react';
 import './Register.scss';
 import { useModal } from './ContextModal';
+import { useModalForLogin } from '../Login/ContextModalForLogin'
 import AvatarIcon from './assets/AvatarIcon.svg';
 import LetterIcon from './assets/LetterIcon.svg';
 import PasswordIcon from './assets/PasswordIcon.svg'
@@ -14,6 +15,8 @@ import AvatarSignUp from './assets/AvatarSignUp.svg'
 export const Register = () => {
 
     const { isOpen, setIsOpen } = useModal();
+
+    const { isOpenForLogin, setIsOpenForLogin } = useModalForLogin();
 
     return (
         <>
@@ -34,7 +37,7 @@ export const Register = () => {
                                     <div className="inputAndIcon"><input placeholder='Repita a Senha' type="password" /> <img src={PasswordIcon} alt="" /></div>
                                 </div>
                                 <div className="RegisterFormContainerTerms">
-                                    <input type="checkbox"/>
+                                    <input type="checkbox" />
                                     <span className='spanTerms'>Aceite os <a href="#"><strong>termos e condições</strong></a></span>
                                 </div>
                                 <Button className="BtnSubmitFormRegiter"
@@ -42,7 +45,7 @@ export const Register = () => {
                                     variant="primary"
                                     size="medium"
                                 />
-                                <span>Já tem uma conta? <a href="#"><strong>Entre agora!</strong></a></span>
+                                <span>Já tem uma conta? <a href="#"><strong onClick={() => { setIsOpen(false); setIsOpenForLogin(true) }}>Entre agora!</strong></a></span>
                             </form>
                         </div>
                         <div className="RegisterContainerRight">

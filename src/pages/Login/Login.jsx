@@ -8,11 +8,11 @@ import AvatarCopy from './assets/AvatarCopy.svg'
 
 export const Login = () => {
 
-    const { isOpen, setIsOpenForLogin } = useModalForLogin();
+    const { isOpenForLogin, setIsOpenForLogin } = useModalForLogin();
 
     return (
         <>
-            {isOpen && (
+            {isOpenForLogin && (
                 <div onClick={() => setIsOpenForLogin(false)} className="LoginContainerPrincipal">
                     <div onClick={(e) => e.stopPropagation()} className="LoginBackground">
                         <div className='LoginContainerLeft'>
